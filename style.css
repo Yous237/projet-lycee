@@ -1,0 +1,76 @@
+/* Votre Style */
+
+ul {
+  background: #red;
+}
+li, [class*="grid"] > * {
+  background: #red;
+}
+header {
+  background: RGB(34,66,124);
+  font-style: italic;
+}
+main {
+
+}
+aside {
+  background:rgb(0,128,128) ;
+  font-style: italic;
+}
+
+footer {
+  background: RGB(34,66,124);
+  text-align: center;
+}
+
+
+#centre {
+  text-align: center;
+}
+
+body {
+background: rgb(254,254,226);
+}
+
+#rose {
+background: rgb(254,254,226);
+}
+
+
+#avion{
+  background: url(avion.jpg);
+  background-size: cover;
+}
+
+#langevin{
+background: rgb(254,254,226);
+}
+
+
+
+
+#conteneur {
+border: 1px ;
+overflow: hidden;
+}
+#conteneur #left {
+width: 50%;
+float: left;
+height: 100px;
+
+}
+#conteneur #right {
+width: 50%;
+float: right;
+height: 200px;
+
+}
+
+#welc{
+  width: 10000px;
+	height: 10px;
+}
+
+#tbl{
+  color: white;
+}

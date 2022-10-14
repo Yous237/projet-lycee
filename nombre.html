@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Initiation a l'html</title>
+    <link rel="stylesheet" href="knacss.css" media="all">
+    <link rel="stylesheet" href="style.css" media="all">
+  </head>
+  <body>
+
+  <header id="header" role="banner" class="pam">
+ Initiation au codage pour les jeunes de la republique
+  </header>
+  <div class="flex-container">
+    <aside class="mod w20 pam aside">
+      <nav id="navigation" role="navigation">
+        <ul class="pam">
+
+          <li id=bl class="pam inbl"><a href="1page.html">Menu principal</a></li>
+
+        </ul>
+      </nav>
+
+    </aside>
+
+<main id="main" role="main" class="flex-item-fluid pam">
+  <h1 id=centre > Devinez le nombre </h1>
+<p id=centre >Le jeux est simple il suffit juste de devinez le nombre en peu d'essaie.Bonne chance</p>
+
+
+</main>
+</div>
+<footer>
+
+<p> <a id=bl href="avis.html">N'hesitais pas deposer votre avis(Cliquez ici)</a></p>
+
+</footer>
+<body>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+   <div id=centre class="form">
+    <label for="cn">Entrez le nombre:</label>
+    <input type = "text" id = "cn" class = "cn">
+    <input type = "submit" value = "envoyez le nombre"
+    class = "envoienombre" id = "en">
+   </div>
+
+  <script type = "text/javascript">
+    var y = Math.floor(Math.random() * 10 + 1);
+
+    var essaie = 1;
+
+    document.getElementById("en").onclick = function(){
+
+    var x = document.getElementById("cn").value;
+
+    if(x == y){
+      alert("Bien joué! vous avez trouvé le nombre en "
+      + essaie + " essaie");
+    }
+    else if(x > y){
+      essaie=essaie+1;
+      alert("Raté! essayé un plus petit nombre");
+    }
+    else{
+      essaie=essaie+1;
+      alert("Raté! essayé un plus grand nombre")
+    }
+    }
+  </script>
+
+</body>
+
+</html>
